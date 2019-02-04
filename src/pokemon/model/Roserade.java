@@ -9,7 +9,7 @@ public class Roserade extends Pokemon implements Grass
 	
 	public int eatGrass()
 	{
-		return 8;
+		return 8989;
 	}
 	public void throwGrass()
 	{

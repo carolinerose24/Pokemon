@@ -2,9 +2,9 @@ package pokemon.model;
 
 public class Mightyena extends Pokemon implements Dark
 {
-	public Mightyena(int number1, String name1) //must be int and then string --> sequence and type is for the computer
+	public Mightyena(int number, String name) //must be int and then string --> sequence and type is for the computer
 	{
-		super(number1, name1); 
+		super(number, name); 
 	}
 	
 	public void shadowTravel()

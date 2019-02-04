@@ -20,6 +20,8 @@ public class PokedexPanel extends JPanel
 	private JTextField pokemonField;
 	
 	private JLabel label1;
+	
+	private JButton thisButton;
 
 	public PokedexPanel(PokedexController appController)
 	{
@@ -29,6 +31,7 @@ public class PokedexPanel extends JPanel
 		pokemonField = new JTextField("", 1);
 		
 		label1 = new JLabel ("banana");
+		thisButton = new JButton("Click Here");
 		
 		
 		setUpPanel();
@@ -43,6 +46,7 @@ public class PokedexPanel extends JPanel
 		this.setBackground(Color.PINK);
 		
 		this.add(pokemonField);
+		this.add(thisButton);
 
 	}
 	
@@ -53,7 +57,13 @@ public class PokedexPanel extends JPanel
 	
 	private void setUpListeners()
 	{
-		
+		thisButton.addActionListener(new ActionListener() 
+		{
+			public void actionPerformed(ActionEvent mouseClick)
+			{
+				
+			}
+		});
 	}
 
 }

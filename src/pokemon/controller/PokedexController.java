@@ -36,6 +36,14 @@ public class PokedexController
 		
 	}
 	
+	public boolean ValidationMethods()
+	{
+		boolean isValid = false;
+		
+		
+		return isValid;
+	}
+	
 	public String isDouble(String input)
 	{
 		return input;

@@ -50,25 +50,25 @@ class TestPokedexController
 	}
 	
 	
-//	@Test
-//	void testValidationMethods()
-//	{
-//		assertFalse(tested.isDouble(""), "Empty text is not a number");
-//		assertFalse(tested.isDouble("text"), "Text is not a number");
-//		assertTrue(tested.isDouble("9"), "9 is a number");
-//		assertTrue(tested.isDouble("9.09"), "9 is a number");
-//		
-//		assertFalse(tested.isInt(""), "Empty text is not a number");
-//		assertFalse(tested.isInt("text"), "Text is not a number");
-//		assertFalse(tested.isInt("3.2"), "Doubles are not ints");
-//		assertTrue(tested.isDouble("9"), "9 is an integer number");
-//	}
-//	
-//	@Test
-//	void testFrame()
-//	{
-//		assertNotNull(tested.getFrame(), "Your app needs a GUI frame");
-//		assertTrue(tested.getFrame() instanceof PokedexFrame, "Your app needs a PokedexFrame");
-//	}
+	@Test
+	void testValidationMethods()
+	{
+		assertFalse(tested.isDouble(""), "Empty text is not a number");
+		assertFalse(tested.isDouble("text"), "Text is not a number");
+		assertTrue(tested.isDouble("9"), "9 is a number");
+		assertTrue(tested.isDouble("9.09"), "9 is a number");
+		
+		assertFalse(tested.isInt(""), "Empty text is not a number");
+		assertFalse(tested.isInt("text"), "Text is not a number");
+		assertFalse(tested.isInt("3.2"), "Doubles are not ints");
+		assertTrue(tested.isDouble("9"), "9 is an integer number");
+	}
+	
+	@Test
+	void testFrame()
+	{
+		assertNotNull(tested.getFrame(), "Your app needs a GUI frame");
+		assertTrue(tested.getFrame() instanceof PokedexFrame, "Your app needs a PokedexFrame");
+	}
 
 }

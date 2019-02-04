@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1540</x>
+      <x>1610</x>
       <y>480</y>
       <w>270</w>
       <h>150</h>
@@ -22,7 +22,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1470</x>
+      <x>1540</x>
       <y>700</y>
       <w>290</w>
       <h>150</h>
@@ -44,7 +44,7 @@ bg=gray</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1920</x>
+      <x>1990</x>
       <y>330</y>
       <w>200</w>
       <h>150</h>
@@ -62,7 +62,7 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1150</x>
+      <x>1220</x>
       <y>510</y>
       <w>260</w>
       <h>170</h>
@@ -83,7 +83,7 @@ bg=pink</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1880</x>
+      <x>1950</x>
       <y>600</y>
       <w>240</w>
       <h>140</h>
@@ -101,7 +101,7 @@ bg=orange</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1350</x>
+      <x>1420</x>
       <y>270</y>
       <w>260</w>
       <h>150</h>
@@ -123,7 +123,7 @@ bg=yellow</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2170</x>
+      <x>2240</x>
       <y>690</y>
       <w>220</w>
       <h>160</h>
@@ -137,7 +137,7 @@ explode() : void</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1790</x>
+      <x>1860</x>
       <y>480</y>
       <w>150</w>
       <h>140</h>
@@ -149,7 +149,7 @@ extends</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2110</x>
+      <x>2180</x>
       <y>630</y>
       <w>230</w>
       <h>80</h>
@@ -161,7 +161,7 @@ extends</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1600</x>
+      <x>1670</x>
       <y>390</y>
       <w>120</w>
       <h>110</h>
@@ -173,7 +173,7 @@ extends</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1400</x>
+      <x>1470</x>
       <y>510</y>
       <w>160</w>
       <h>70</h>
@@ -185,7 +185,7 @@ extends</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1690</x>
+      <x>1760</x>
       <y>620</y>
       <w>100</w>
       <h>100</h>
@@ -197,7 +197,7 @@ extends</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1750</x>
+      <x>1820</x>
       <y>340</y>
       <w>190</w>
       <h>160</h>
@@ -209,7 +209,7 @@ extends</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1720</x>
+      <x>1790</x>
       <y>140</y>
       <w>160</w>
       <h>150</h>
@@ -224,7 +224,7 @@ skyUppercut() : int
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1150</x>
+      <x>1220</x>
       <y>140</y>
       <w>160</w>
       <h>150</h>
@@ -240,7 +240,7 @@ perishSong() : String
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1010</x>
+      <x>1080</x>
       <y>760</y>
       <w>180</w>
       <h>110</h>
@@ -254,7 +254,7 @@ throwGrass() : void</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>2190</x>
+      <x>2260</x>
       <y>210</y>
       <w>150</w>
       <h>100</h>
@@ -268,7 +268,7 @@ throwGrass() : void</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>2030</x>
+      <x>2100</x>
       <y>200</y>
       <w>190</w>
       <h>150</h>
@@ -280,7 +280,7 @@ extends</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>910</x>
+      <x>980</x>
       <y>360</y>
       <w>160</w>
       <h>130</h>
@@ -296,7 +296,7 @@ venoShock() : String
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1790</x>
+      <x>1860</x>
       <y>880</y>
       <w>190</w>
       <h>140</h>
@@ -310,7 +310,7 @@ crunchEnemy() : int</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1710</x>
+      <x>1780</x>
       <y>840</y>
       <w>130</w>
       <h>60</h>
@@ -322,7 +322,7 @@ extends</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1150</x>
+      <x>1220</x>
       <y>260</y>
       <w>340</w>
       <h>50</h>
@@ -334,7 +334,7 @@ extends</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1060</x>
+      <x>1130</x>
       <y>670</y>
       <w>170</w>
       <h>110</h>
@@ -346,7 +346,7 @@ extends</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1060</x>
+      <x>1130</x>
       <y>360</y>
       <w>160</w>
       <h>170</h>
@@ -358,7 +358,7 @@ extends</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1600</x>
+      <x>1670</x>
       <y>280</y>
       <w>220</w>
       <h>130</h>
@@ -370,10 +370,10 @@ extends</panel_attributes>
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>1960</x>
+      <x>1430</x>
       <y>0</y>
       <w>280</w>
-      <h>150</h>
+      <h>160</h>
     </coordinates>
     <panel_attributes>Package :: ClassName
 --
@@ -386,35 +386,62 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>180</x>
-      <y>430</y>
-      <w>290</w>
-      <h>310</h>
+      <x>0</x>
+      <y>200</y>
+      <w>420</w>
+      <h>300</h>
     </coordinates>
     <panel_attributes>pokemon.view :: PokedexPanel
 --
-- setUpListeners()
-- updateButton : JButton
+- appController : PokedoxController
+- appLayout : StringLayout
+
+- textFields for all the Pokemon data members : JextField
+- labels for all the above: JLabel
+
 --
-- setUpLayout()
-- setUpListeners</panel_attributes>
++ PokedoxPanel(PokedexController) : constructor
+
+- setUpLayout() : void
+- setUpListeners() : void
+- setUpPanel() : void
+
+
+bg=dark_gray</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>500</x>
-      <y>430</y>
-      <w>350</w>
+      <x>460</x>
+      <y>200</y>
+      <w>370</w>
       <h>300</h>
     </coordinates>
-    <panel_attributes>pokedexFrame
+    <panel_attributes>pokemon.view :: PokedexFrame
+--
+- app: PokedexController 
+- panel : PokedexPanel
+
 --
 
-
-
---
-</panel_attributes>
++ PokedexFrame(PokedexController) : constructor
+- setUpFrame() : void
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>340</x>
+      <y>30</y>
+      <w>280</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Panel:
+always has controller and layout
+And 3 setups
+bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

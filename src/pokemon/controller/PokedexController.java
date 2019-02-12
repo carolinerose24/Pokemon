@@ -30,11 +30,11 @@ public class PokedexController
 	
 	
 	
-	public PokedexFrame getAppFrame()
+	public PokedexFrame getFrame() //appFrame
 	{
 		return appFrame;
 	}
-	public void setAppFrame(PokedexFrame appFrame)
+	public void setFrame(PokedexFrame appFrame)
 	{
 		this.appFrame = appFrame;
 	}
@@ -89,27 +89,49 @@ public class PokedexController
 		
 	}
 	
-	public boolean ValidationMethods()
+//	public boolean ValidationMethods(String input)
+//	{
+//		boolean isValid = false;
+//		
+//		//isDouble(input);
+//		//isInt(input);
+//		
+//		return isValid;
+//	}
+	
+	public boolean isDouble(String maybeDouble)
 	{
 		boolean isValid = false;
+		try
+		{
+			Double.parseDouble(maybeDouble); //String to double conversion
+			isValid=true;
+		}
+		catch(NumberFormatException error)
+		{
+			JOptionPane.showMessageDialog(null, "Put in a double");
+		}
+		return isValid;
+	}
+	
+	public boolean isInt(String maybeInt)
+	{
+		boolean isValid = false;
+		
+		try
+		{
+			Integer.parseInt(maybeInt);
+			isValid = true;
+		}
+		catch(NumberFormatException error) //type, variable -- formal parameter
+		{
+			JOptionPane.showMessageDialog(null, "Put in an integer");
+		}
 		
 		
 		return isValid;
 	}
 	
-	public String isDouble(String input)
-	{
-		return input;
-	}
-	
-	public String isInt(String input)
-	{
-		return input;
-	}
 
-	public void getFrame()
-	{
-		
-	}
 	
 }

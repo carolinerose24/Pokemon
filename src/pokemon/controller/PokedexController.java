@@ -1,14 +1,17 @@
 package pokemon.controller;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
-//import pokemon.view.PokedexFrame;
+import java.util.*;
 import pokemon.model.*;
 import pokemon.view.*;
 
 public class PokedexController
 {
+
+	private Pokemon thisPokemon;
 	private ArrayList<Pokemon> pokemonList;
 	private PokedexFrame appFrame;
+	
 	public PokedexController()
 	{
 		pokemonList = new ArrayList<Pokemon>();
@@ -24,6 +27,56 @@ public class PokedexController
 		pokemonList.add(new Roserade(407, "Grass/Poison"));
 		pokemonList.add(new Pidgey(16, "Normal/Flying"));
 	}
+	
+	
+	
+	public PokedexFrame getAppFrame()
+	{
+		return appFrame;
+	}
+	public void setAppFrame(PokedexFrame appFrame)
+	{
+		this.appFrame = appFrame;
+	}
+	
+	public Pokemon getThisPokemon()
+	{
+		return thisPokemon;
+	}
+	public void setThisPokemon(Pokemon thisPokemon)
+	{
+		this.thisPokemon = thisPokemon;
+	}
+	
+	
+	public void updatePokemon (int index, String [] data)
+	{
+		if (data.length == 5)
+		{
+			Pokemon current = pokemonList.get(index);
+			current.setAttackPoints(Integer.parseInt(data[0]));
+			current.setEnhancementModifier(Double.parseDouble(data[1]));
+			current.setHealthPoints(Integer.parseInt(data[2]));
+			current.setName(data[3]);
+			current.setCanEvolve(Boolean.parseBoolean(data[4]));
+			
+		}
+	}
+	
+	public String[] buildPokedexText()
+	{
+		String[] names = new String [pokemonList.size()];
+		
+		for (int index = 0; index < pokemonList.size(); index++)
+		{
+			names[index] = pokemonList.get(index).getName();
+		}
+		return names;
+	}
+	
+	
+	
+	
 	
 	public void start()
 	{

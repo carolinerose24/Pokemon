@@ -46,7 +46,7 @@ class TestPokedexController
 			}
 		}
 		assertTrue(typeCount > 0, "At least one Pokemon must implement two different interfaces");
-		assertTrue(evolveCount > 0, "At least one Pokemon must be evolveable");
+		assertTrue(evolveCount > 0, "At least one Pokemon must be evolveable"); 
 	}
 	
 	

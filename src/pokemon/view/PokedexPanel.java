@@ -35,12 +35,15 @@ public class PokedexPanel extends JPanel
 	
 	private JButton changeButton; 
 	private JComboBox<String> pokedexDropdown;
+	
+	private ImageIcon pokemonIcon;
 
 	public PokedexPanel(PokedexController app)
 	{
 		super();
 		this.app = app;
-		appLayout = new SpringLayout();
+		this.appLayout = new SpringLayout();
+		this.pokemonIcon = new ImageIcon(getClass().getResource("/pokemon/view/images/PMflareon.jpeg")); //default image
 		
 	
 		numberField = new JTextField("0");
@@ -57,13 +60,10 @@ public class PokedexPanel extends JPanel
 		attackLabel = new JLabel ("This pokemon attack level is ");
 		enhanceLabel = new JLabel ("This pokemon enhancement level is ");
 		healthLabel = new JLabel ("This pokemon health is");
-		imageLabel = new JLabel ("pokemon goes here");
+		imageLabel = new JLabel ("pokemon goes here", pokemonIcon, JLabel.CENTER); //tell the panel how to display in relationship to the text
 		
 		changeButton = new JButton("Click here to change the pokevalues");
 		pokedexDropdown = new JComboBox<String>(); //stub
-
-
-		
 		
 		setUpPanel();
 		setUpLayout();
@@ -94,6 +94,8 @@ public class PokedexPanel extends JPanel
 		this.add(healthLabel);
 		this.add(imageLabel);
 		
+		imageLabel.setVerticalTextPosition(JLabel.BOTTOM);
+		imageLabel.setHorizontalTextPosition(JLabel.CENTER);
 
 	
 		
@@ -129,6 +131,26 @@ public class PokedexPanel extends JPanel
 			}
 		});
 	}
+	
+	
+	private void changeImageDisplay(String name)
+	{
+		String path = "/pokemon/view/images/";
+		String defaultName = "Flareon";
+		String extension = ".jpeg";
+		
+		try
+		{
+			pokemonIcon = new ImageIcon(getClass().getResource(path + name.toLowerCase() + extension));
+		}
+		catch (NullPointerException missingFile)
+		{
+			pokemonIcon = new ImageIcon(getClass().getResource(path + defaultName + extension));
+		}
+		imageLabel.setIcon(pokemonIcon);
+		repaint();
+		
+	};
 	
 	
 

@@ -54,6 +54,8 @@ public class PokedexController
 		if (data.length == 5)
 		{
 			Pokemon current = pokemonList.get(index);
+			current.setCanEvolve(true);
+			
 			current.setAttackPoints(Integer.parseInt(data[0]));
 			current.setEnhancementModifier(Double.parseDouble(data[1]));
 			current.setHealthPoints(Integer.parseInt(data[2]));
@@ -88,16 +90,7 @@ public class PokedexController
 		return pokemonList;
 		
 	}
-	
-//	public boolean ValidationMethods(String input)
-//	{
-//		boolean isValid = false;
-//		
-//		//isDouble(input);
-//		//isInt(input);
-//		
-//		return isValid;
-//	}
+
 	
 	public boolean isDouble(String maybeDouble)
 	{

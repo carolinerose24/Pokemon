@@ -7,7 +7,6 @@ import pokemon.view.*;
 
 public class PokedexController
 {
-
 	private Pokemon thisPokemon;
 	private ArrayList<Pokemon> pokemonList;
 	private PokedexFrame appFrame;
@@ -26,27 +25,33 @@ public class PokedexController
 		pokemonList.add(new Flareon(136, "Fire"));
 		pokemonList.add(new Roserade(407, "Grass/Poison"));
 		pokemonList.add(new Pidgey(16, "Normal/Flying"));
-	}
+		
 	
+	}
 	
 	
 	public PokedexFrame getFrame() //appFrame
 	{
 		return appFrame;
 	}
+	
 	public void setFrame(PokedexFrame appFrame)
 	{
 		this.appFrame = appFrame;
 	}
 	
 	public Pokemon getThisPokemon()
+
 	{
 		return thisPokemon;
 	}
+	
 	public void setThisPokemon(Pokemon thisPokemon)
+
 	{
 		this.thisPokemon = thisPokemon;
 	}
+	
 	
 	
 	public void updatePokemon (int index, String [] data)
@@ -54,7 +59,6 @@ public class PokedexController
 		if (data.length == 5)
 		{
 			Pokemon current = pokemonList.get(index);
-			current.setCanEvolve(true);
 			
 			current.setAttackPoints(Integer.parseInt(data[0]));
 			current.setEnhancementModifier(Double.parseDouble(data[1]));
@@ -62,6 +66,7 @@ public class PokedexController
 			current.setName(data[3]);
 			current.setCanEvolve(Boolean.parseBoolean(data[4]));
 			
+		//	this.setCanEvolve(true);
 		}
 	}
 	
@@ -75,15 +80,11 @@ public class PokedexController
 		}
 		return names;
 	}
-	
-	
-	
-	
-	
-	public void start()
-	{
-		
-	}
+
+//	public void start()
+//	{
+//		
+//	}
 	
 	public ArrayList<Pokemon> getPokemonList()
 	{
@@ -102,7 +103,8 @@ public class PokedexController
 		}
 		catch(NumberFormatException error)
 		{
-			JOptionPane.showMessageDialog(null, "Put in a double");
+			//JOptionPane.showMessageDialog(null, "Put in a double");
+		
 		}
 		return isValid;
 	}
@@ -118,7 +120,7 @@ public class PokedexController
 		}
 		catch(NumberFormatException error) //type, variable -- formal parameter
 		{
-			JOptionPane.showMessageDialog(null, "Put in an integer");
+			//JOptionPane.showMessageDialog(null, "Put in an integer");
 		}
 		
 		

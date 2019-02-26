@@ -41,7 +41,7 @@ public class PokedexPanel extends JPanel
 		this.pokemonIcon = new ImageIcon(getClass().getResource("/pokemon/view/images/PMflareon.jpeg")); //default image
 		
 		numberField = new JTextField("0");
-		numberField.setEditable(false);
+		numberField.setEnabled(false);
 		nameField = new JTextField("My pokename");
 		evolveField = new JTextField("true");
 		attackField = new JTextField("0");
@@ -68,13 +68,14 @@ public class PokedexPanel extends JPanel
 	
 	private void setUpLayout()
 	{
+		appLayout.putConstraint(SpringLayout.NORTH, pokedexDropdown, 0, SpringLayout.NORTH, changeButton);
+		appLayout.putConstraint(SpringLayout.EAST, pokedexDropdown, 0, SpringLayout.EAST, nameLabel);
+		
 		appLayout.putConstraint(SpringLayout.NORTH, changeButton, 26, SpringLayout.SOUTH, imageLabel);
 		appLayout.putConstraint(SpringLayout.WEST, changeButton, 10, SpringLayout.WEST, this);
 		
 		appLayout.putConstraint(SpringLayout.NORTH, imageLabel, 0, SpringLayout.NORTH, this);
 		appLayout.putConstraint(SpringLayout.WEST, imageLabel, 0, SpringLayout.WEST, this);
-		appLayout.putConstraint(SpringLayout.NORTH, pokedexDropdown, 57, SpringLayout.SOUTH, healthLabel);
-		appLayout.putConstraint(SpringLayout.WEST, pokedexDropdown, 55, SpringLayout.EAST, changeButton);
 		
 		appLayout.putConstraint(SpringLayout.NORTH, numberField, 37, SpringLayout.NORTH, this);
 		

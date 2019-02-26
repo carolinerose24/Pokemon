@@ -58,10 +58,11 @@ public class PokedexPanel extends JPanel
 		attackLabel = new JLabel ("This pokemon attack level is ");
 		enhanceLabel = new JLabel ("This pokemon enhancement level is ");
 		healthLabel = new JLabel ("This pokemon health is");
-		imageLabel = new JLabel ("pokemon goes here", pokemonIcon, JLabel.CENTER);
+		imageLabel = new JLabel (" ", pokemonIcon, JLabel.CENTER);
 		
 		changeButton = new JButton("Click here to change the pokevalues");
 		saveButton = new JButton("Save");
+
 		
 		pokedexDropdown = new JComboBox<String>();
 		
@@ -80,6 +81,9 @@ public class PokedexPanel extends JPanel
 		appLayout.putConstraint(SpringLayout.EAST, numberField, 0, SpringLayout.EAST, evolveField);
 		appLayout.putConstraint(SpringLayout.EAST, evolveField, 0, SpringLayout.EAST, attackField);
 
+		
+		appLayout.putConstraint(SpringLayout.NORTH, saveButton, 36, SpringLayout.SOUTH, changeButton);
+		appLayout.putConstraint(SpringLayout.WEST, saveButton, 0, SpringLayout.WEST, numberField);
 		appLayout.putConstraint(SpringLayout.EAST, enhancementField, -285, SpringLayout.EAST, this);
 		appLayout.putConstraint(SpringLayout.EAST, attackField, 0, SpringLayout.EAST, enhancementField);
 		appLayout.putConstraint(SpringLayout.WEST, enhancementField, 43, SpringLayout.EAST, enhanceLabel);
@@ -152,6 +156,8 @@ public class PokedexPanel extends JPanel
 		this.add(enhanceLabel);
 		this.add(healthLabel);
 		this.add(imageLabel);
+		
+		this.add(saveButton);
 		
 		imageLabel.setVerticalTextPosition(JLabel.BOTTOM);
 		imageLabel.setHorizontalTextPosition(JLabel.CENTER);

@@ -4,12 +4,15 @@ import javax.swing.JOptionPane;
 import java.util.*;
 import pokemon.model.*;
 import pokemon.view.*;
+import java.io.*;
 
 public class PokedexController
 {
-	private Pokemon thisPokemon;
+	private String saveFile = "backup.pokemon";
+	private Pokemon thisPokemon; //may not need this?
 	private ArrayList<Pokemon> pokemonList;
 	private PokedexFrame appFrame;
+	
 	
 	public PokedexController()
 	{
@@ -18,15 +21,20 @@ public class PokedexController
 		appFrame = new PokedexFrame(this);
 	}
 	
+	public void start()
+	{
+//		this.appFrame = new PokedexFrame(this);
+	}
+	
 	private void addPokemon()
 	{
-		pokemonList.add(new Mightyena(262 , "Dark"));
-		pokemonList.add(new Leafeon(570, "Grass"));
-		pokemonList.add(new Flareon(136, "Fire"));
-		pokemonList.add(new Roserade(407, "Grass/Poison"));
-		pokemonList.add(new Pidgey(16, "Normal/Flying"));
-		
-	
+		pokemonList.add(new Flareon(136, "Flareon"));
+		pokemonList.add(new Mightyena(262 , "Mightyena"));
+		pokemonList.add(new Leafeon(570, "Leafeon"));
+		pokemonList.add(new Roserade(407, "Roserade"));
+		pokemonList.add(new Pidgey(16, "Pidgey"));
+		pokemonList.add(new Sharktopus(1, "Sharktopus"));
+			
 	}
 	
 	
@@ -81,10 +89,7 @@ public class PokedexController
 		return names;
 	}
 
-//	public void start()
-//	{
-//		
-//	}
+
 	
 	public ArrayList<Pokemon> getPokemonList()
 	{

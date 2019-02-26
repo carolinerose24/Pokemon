@@ -53,7 +53,8 @@ public abstract class Pokemon
 		String pokemonInfo = "This pokemon is of type: " + this.getClass().getSimpleName();return pokemonInfo;
 		}/** * @return the healthPoints */public int getHealthPoints(){return healthPoints;}/** * @return the attackPoints */public int getAttackPoints(){return attackPoints;}/** * @return the enhancementModifier */public double getEnhancementModifier(){return enhancementModifier;}/** * @return the number */public int getNumber(){return number;}
 /** * @return the name */public String getName(){return name;
-		}/** * @return the canEvolve */public boolean isCanEvolve(){canEvolve = true; return canEvolve;
+		}/** * @return the canEvolve */public boolean isCanEvolve(){canEvolve = true;
+		return canEvolve;
 	}/** * @param healthPoints the healthPoints to set */public void setHealthPoints(int healthPoints){this.healthPoints = healthPoints;}/** * @param attackPoints the attackPoints to set */public void setAttackPoints(int attackPoints){this.attackPoints = attackPoints;}/** * @param enhancementModifier the enhancementModifier to set */public void setEnhancementModifier(double enhancementModifier){this.enhancementModifier = enhancementModifier;}/** * @param name the name to set */public void setName(String name){this.name = name;}/** * @param canEvolve the canEvolve to set */public void setCanEvolve(boolean canEvolve){this.canEvolve = canEvolve;
 
 	

@@ -170,6 +170,8 @@ public class PokedexPanel extends JPanel
 	{
 		DefaultComboBoxModel<String> temp = new DefaultComboBoxModel<String>(app.buildPokedexText());
 		pokedexDropdown.setModel(temp);
+		
+		//set same pokemon's data here?
 	}
 	
 	private void setUpListeners()

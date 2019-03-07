@@ -142,7 +142,7 @@ public class PokedexController
 		}
 	}
 	
-	private void loadPokedex()
+	public void loadPokedex()
 	{
 		try
 		{

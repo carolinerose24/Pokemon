@@ -220,7 +220,7 @@ public class PokedexPanel extends JPanel
 			public void actionPerformed(ActionEvent Click)
 			{
 				app.savePokedex();
-				app.loadPokedex();
+
 			}
 		});
 		
@@ -252,11 +252,12 @@ public class PokedexPanel extends JPanel
 		if(app.isInt(attackField.getText()) && app.isDouble(enhancementField.getText()) && app.isInt(healthField.getText()))
 		{
 			String [] data = new String[5];
-			data[0] = "0"; //d i s b
-			data[1] = "0.0";
-			data[2] = "0";
-			data[3] = "name";
-			data[4] = "true";
+			
+			data[0] = attackField.getText(); //d i s b
+			data[1] = enhancementField.getText();
+			data[2] = healthField.getText();
+			data[3] = evolveField.getText();
+			data[4] = numberField.getText();
 		
 			app.updatePokemon(index, data);
 		}
@@ -269,9 +270,9 @@ public class PokedexPanel extends JPanel
 		attackField.setText(data[0]);
 		enhancementField.setText(data[1]);
 		healthField.setText(data[2]);
-		nameField.setText(data[3]);
 		evolveField.setText(data[4]);
 		numberField.setText(data[5]);
+		//nameField.setText(data[3]);
 	}
 	
 	
